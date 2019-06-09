@@ -1,9 +1,10 @@
 #ifndef __test_calculator
 #define __test_calculator
+#include "Modulator.hh"
 class Calculator
 {
 private:
-
+    Modulator* mod;
 public:
     Calculator();
     ~Calculator();
