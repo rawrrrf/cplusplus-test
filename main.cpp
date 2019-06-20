@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std; 
 
-int main(int argc, char const *argv[])
+int main()
 {
     Calculator c = Calculator();
     std::cout << "Adding 5 + 4 = " << c.add(5,4) << std::endl;
