@@ -5,3 +5,5 @@ main
 out/
 .vscode/
 .idea/
+build/
+

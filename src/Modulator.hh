@@ -1,5 +1,5 @@
-#ifndef __test_modulator
-#define __test_modulator
+#pragma once
+
 class Modulator
 {
 private:
@@ -9,5 +9,3 @@ public:
     ~Modulator();
     long modulate(long value);
 };
-
-#endif

@@ -1,5 +1,5 @@
-#ifndef __test_calculator
-#define __test_calculator
+#pragma once
+
 #include "Modulator.hh"
 class Calculator
 {
@@ -11,5 +11,3 @@ public:
     long add(long x, long y);
     long sub(long x, long y);
 };
-
-#endif

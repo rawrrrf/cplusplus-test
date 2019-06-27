@@ -23,4 +23,3 @@ long Calculator::add(long x, long y) {
 long Calculator::sub(long x, long y) {
     return mod->modulate(x-y);
 }
-

@@ -1,10 +1,15 @@
 # Compiling
 
 ```
-mkdir out/
-mkdir lib/
-g++ -c src/Calculator.cpp -o out/Calculator.o
-g++ -c src/Modulator.cpp -o out/Modulator.o
-ar rvs lib/libCalc.a out/Calculator.o out/Modulator.o
-g++ -L./lib -lCalc main.cpp -o main
+mkdir build
+cd build
+cmake ..
+make
 ```
+
+# Tasks
+
+1. Create an interface or super class, `Operator`, and refactor `Modulator` to implement that interface
+2. Create another implementation that changes the sign of the `Calculator` add / sub methods
+3. Refactor the `Calculator` class so we can choose the operator on construction time.
+4. Create a new folder, `test` and create a unit test for the Calculator add method. 
