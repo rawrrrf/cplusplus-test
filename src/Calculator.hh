@@ -1,12 +1,20 @@
 #pragma once
 
-#include "Modulator.hh"
+#include "Operator.hh"
+
 class Calculator
 {
 private:
-    Modulator* mod;
+	Operator * op;
 public:
     Calculator();
     ~Calculator();
-    long do_operation(long x, long y);
+	long do_operation(unsigned int op, long x, long y);
+	enum {
+		add = 0,
+		subtract,
+		divide,
+		multiply,
+		modulo
+	} operators;
 };
