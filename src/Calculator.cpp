@@ -36,7 +36,12 @@ long Calculator::do_operation(unsigned int operate, long x, long y) {
 		op = new Multiplication();
 		break;
 	case modulo:
-		op = new Modulator();
+		if (0 != y) {
+			op = new Modulator(); //avoid division by zero
+		}
+		else {
+			cout << "Error: Modulo by zero";
+		}
 		break;
 	default:
 		cout << "invalid operation";
