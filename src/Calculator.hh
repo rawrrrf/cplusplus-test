@@ -8,6 +8,5 @@ private:
 public:
     Calculator();
     ~Calculator();
-    long add(long x, long y);
-    long sub(long x, long y);
+    long do_operation(long x, long y);
 };

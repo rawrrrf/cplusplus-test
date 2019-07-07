@@ -4,14 +4,10 @@
 Modulator::Modulator(long m)
 {
     mod = m;
-    std::cout << "Modulator Constructed" << std::endl;
 }
 
-Modulator::~Modulator()
-{
-    std::cout << "Modulator Destructed" << std::endl;
-}
+Modulator::~Modulator() = default;
 
-long Modulator::modulate(long v) {
-    return v % mod;
+long Modulator::operation(long x, long y) {
+    return (x+y) % mod;
 }
